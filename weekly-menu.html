@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תפריט שבועי־חודשי מלא</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <button onclick="window.location.href='index.html'" class="home-button">חזרה לדף הבית</button>
+            <h1>📅 תפריט שבועי</h1>
+            <p class="subtitle">בחרי יום להצגת התפריט היומי</p>
+        </header>
+
+        <div class="day-navigation">
+            <button class="day-btn active" onclick="showDay('sunday')">ראשון</button>
+            <button class="day-btn" onclick="showDay('monday')">שני</button>
+            <button class="day-btn" onclick="showDay('tuesday')">שלישי</button>
+            <button class="day-btn" onclick="showDay('wednesday')">רביעי</button>
+            <button class="day-btn" onclick="showDay('thursday')">חמישי</button>
+            <button class="day-btn" onclick="showDay('friday')">שישי</button>
+            <button class="day-btn" onclick="showDay('saturday')">שבת</button>
+        </div>
+
+        <!-- אזורי תוכן לכל יום -->
+        <div id="sunday" class="day-content">
+            <h2>יום ראשון – פתיחה רכה וניקוי כבד</h2>
+            <ul>
+                <li><span class="meal-title">בוקר:</span> כוס מים חמימים עם טיפה לימון על בטן ריקה<br>5 נשימות עמוקות עם ידיים על הבטן<br>חליטה: שן הארי + קמומיל (או עלי זית + מרווה)<br>דייסת שיבולת שועל עדינה עם:<br>1 כפית שמן קוקוס<br>1 כף פשתן טחון או שומשום<br>1 תמר מעוך או 1/2 כפית סילאן<br>קינמון<br>חליטת מרווה בצד</li>
+                <li><span class="meal-title">צהריים:</span> מרק כתום (גזר, בטטה, קישוא, שורש סלרי) עם כורכום<br>עדשים כתומות מבושלות היטב (חצי כוס)<br>אורז לבן מאודה עם שמן זית<br>קציצות ירק אפויות (קינואה, גזר, קישוא)<br>בצל מאודה בצד (מחזק דם ומסייע לגושים)</li>
+                <li><span class="meal-title">ערב:</span> פירה בטטה עם כף שמן זית ומעט מלח ים<br>כף טחינה גולמית (אופציונלי)<br>כוס מים חמים עם כפית שמן קוקוס וקורט קינמון<br>או חליטת לבנדר מרגיעה</li>
+                <li><span class="meal-title">לפני שינה:</span> אמבט רגליים עם סודה לשתייה ומלח גס (אם יש זמן)<br>5 נשימות עמוקות<br>שימון קל עם שמן קיק (בטן/שדיים/בית שחי – לפי הצורך)</li>
+            </ul>
+        </div>
+
+        <div id="monday" class="day-content" style="display:none">
+            <h2>יום שני – המשך איזון הורמונלי והזנת דם</h2>
+            <ul>
+                <li><span class="meal-title">בוקר:</span> כוס מים פושרים<br>5 נשימות עמוקות עם ידיים על הבטן<br>חליטה: מרווה + שיבה<br>כפית זרעי דלעת ושומשום טחונים בתוך דייסת אורז או יוגורט סויה<br>שפריץ סילאן טבעי (לא חובה)</li>
+                <li><span class="meal-title">צהריים:</span> תבשיל קינואה עם אפונה ירוקה, שום ובצל<br>סלק מאודה עם שמן זית, לימון ומעט כמון<br>חצי אבוקדו עם מלח ים בצד</li>
+                <li><span class="meal-title">ערב:</span> מרק דלעת עדין עם גזר, בצל וקישוא<br>פרוסת לחם כוסמין מלא (אם אין רגישות לגלוטן) עם טחינה גולמית או ממרח אבוקדו<br>חליטת מרווה + קמומיל להרגעת מערכת העצבים</li>
+                <li><span class="meal-title">לפני שינה:</span> 5 נשימות עמוקות<br>עיסוי קל לבטן התחתונה עם שמן קוקוס או קיק<br>אם אפשר – אמבט רגליים עם מלח גס (15 דקות)</li>
+            </ul>
+        </div>
+
+        <div id="tuesday" class="day-content" style="display:none">
+            <h2>יום שלישי – תמיכה במעי, ניקוז, ואיזון הורמונלי</h2>
+            <ul>
+                <li><span class="meal-title">בוקר:</span> כוס מים חמימים עם כפית שמן זית<br>נשימה שקטה 3 דקות עם ידיים על הבטן<br>שייק עדין:<br>מים פושרים<br>שיבולת שועל<br>כף שמן קוקוס<br>חצי תמר או תמר שלם<br>טיפה תמצית וניל<br>כף פשתן או חמנייה טחונים</li>
+                <li><span class="meal-title">צהריים:</span> מרק עדשים אדומות עם גזר, שורש פטרוזיליה ובצל<br>אורז בסמטי לבן עם בצל מטוגן קלות בשמן זית<br>ירק ירוק מאודה (תרד, כרוב, מנגולד)<br>תיבול עדין: כורכום, כמון, מלח ים</li>
+                <li><span class="meal-title">ערב:</span> מרק בצל טבעי עם קישוא או בטטה<br>ירקות שורש בתנור עם מעט שמן זית<br>חליטת מרווה + קמומיל להרגעת מערכת העצבים</li>
+                <li><span class="meal-title">לפני שינה:</span> כתיבה קצרה ביומן (משפט אחד של תחושה בגוף)<br>הנחת שמן קיק על שדיים או בטן תחתונה (אם אין דימום)<br>נשימות עמוקות ומדיטציה שקטה של 3 דקות</li>
+            </ul>
+        </div>
+
+        <div id="wednesday" class="day-content" style="display:none">
+            <h2>יום רביעי – ניקוי רעלים והזנת דם</h2>
+            <ul>
+                <li><span class="meal-title">בוקר:</span> כוס מים חמימים עם טיפת לימון<br>נשימות עמוקות 5 דקות<br>דייסת כוסמת עם:<br>1 כפית שמן קוקוס<br>1 כף שומשום מלא טחון<br>1 תמר מעוך<br>קינמון<br>חליטת שן הארי</li>
+                <li><span class="meal-title">צהריים:</span> מרק ירקות שורש עם סלק, גזר, בטטה<br>כוסמת מבושלת עם בצל מטוגן קלות בשמן זית<br>סלט ירוק עם מלפפון, חסה, נבטים ולימון</li>
+                <li><span class="meal-title">ערב:</span> פשטידת ירקות (קישוא, גזר, בצל) עם ביצה<br>או מרק עדשים ירוקות<br>חליטת קמומיל ומרווה</li>
+                <li><span class="meal-title">לפני שינה:</span> אמבט רגליים עם מלח גס וסודה לשתייה<br>עיסוי קל עם שמן קיק לבטן התחתונה</li>
+            </ul>
+        </div>
+
+        <div id="thursday" class="day-content" style="display:none">
+            <h2>יום חמישי – תמיכה בכבד ואיזון הורמונלי</h2>
+            <ul>
+                <li><span class="meal-title">בוקר:</span> כוס מים חמימים עם טיפת לימון<br>נשימות עמוקות 5 דקות<br>דייסת קינואה עם:<br>1 כפית שמן קוקוס<br>1 כף שומשום מלא טחון<br>1 תמר מעוך<br>קינמון<br>חליטת שן הארי</li>
+                <li><span class="meal-title">צהריים:</span> מרק ירקות שורש עם סלק, גזר, בטטה<br>קינואה מבושלת עם בצל מטוגן קלות בשמן זית<br>סלט ירוק עם מלפפון, חסה, נבטים ולימון</li>
+                <li><span class="meal-title">ערב:</span> פשטידת ירקות (קישוא, גזר, בצל) עם ביצה<br>או מרק עדשים ירוקות<br>חליטת קמומיל ומרווה</li>
+                <li><span class="meal-title">לפני שינה:</span> אמבט רגליים עם מלח גס וסודה לשתייה<br>עיסוי קל עם שמן קיק לבטן התחתונה</li>
+            </ul>
+        </div>
+
+        <div id="friday" class="day-content" style="display:none">
+            <h2>יום שישי – הכנה לשבת והזנה עמוקה</h2>
+            <ul>
+                <li><span class="meal-title">בוקר:</span> כוס מים חמימים עם כפית שמן זית<br>נשימות עמוקות 5 דקות<br>דייסת שיבולת שועל עם:<br>1 כפית שמן קוקוס<br>1 כף שומשום מלא טחון<br>1 תמר מעוך<br>קינמון<br>חליטת שן הארי</li>
+                <li><span class="meal-title">צהריים:</span> מרק ירקות שורש עם סלק, גזר, בטטה<br>אורז בסמטי לבן עם בצל מטוגן קלות בשמן זית<br>סלט ירוק עם מלפפון, חסה, נבטים ולימון</li>
+                <li><span class="meal-title">ערב:</span> פשטידת ירקות (קישוא, גזר, בצל) עם ביצה<br>או מרק עדשים ירוקות<br>חליטת קמומיל ומרווה</li>
+                <li><span class="meal-title">לפני שינה:</span> אמבט רגליים עם מלח גס וסודה לשתייה<br>עיסוי קל עם שמן קיק לבטן התחתונה</li>
+            </ul>
+        </div>
+
+        <div id="saturday" class="day-content" style="display:none">
+            <h2>יום שבת – מנוחה והזנה</h2>
+            <ul>
+                <li><span class="meal-title">בוקר:</span> כוס מים חמימים עם טיפת לימון<br>נשימות עמוקות 5 דקות<br>דייסת שיבולת שועל עם:<br>1 כפית שמן קוקוס<br>1 כף שומשום מלא טחון<br>1 תמר מעוך<br>קינמון<br>חליטת שן הארי</li>
+                <li><span class="meal-title">צהריים:</span> מרק ירקות שורש עם סלק, גזר, בטטה<br>אורז בסמטי לבן עם בצל מטוגן קלות בשמן זית<br>סלט ירוק עם מלפפון, חסה, נבטים ולימון</li>
+                <li><span class="meal-title">ערב:</span> פשטידת ירקות (קישוא, גזר, בצל) עם ביצה<br>או מרק עדשים ירוקות<br>חליטת קמומיל ומרווה</li>
+                <li><span class="meal-title">לפני שינה:</span> אמבט רגליים עם מלח גס וסודה לשתייה<br>עיסוי קל עם שמן קיק לבטן התחתונה</li>
+            </ul>
+        </div>
+
+        <script>
+            function showDay(day) {
+                // הסתרת כל התפריטים
+                document.querySelectorAll('.day-content').forEach(content => {
+                    content.style.display = 'none';
+                });
+                
+                // הצגת התפריט ליום הנבחר
+                document.getElementById(day).style.display = 'block';
+                
+                // הדגשת הכפתור הפעיל
+                document.querySelectorAll('.day-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                event.target.classList.add('active');
+            }
+        </script>
+    </div>
+</body>
+</html>
